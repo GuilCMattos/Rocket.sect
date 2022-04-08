@@ -6,3 +6,7 @@ function clarear() {
   
 }
 
+function scrollPraCima() {
+  scrollTo(0, 0);
+  
+}
