@@ -20,6 +20,28 @@ body {
 
 }
 
+.dark-mode:root {
+  --fontcolor: rgb(43, 43, 43);
+  --secfontcolor: #181818;
+  --spancolor:#05c7ad;
+  --background:#fafafa;
+}
+
+#mododark {
+  position: absolute;
+  left:96%;
+  top: 2%;
+  background: none;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#mododark:hover {
+  border-color: #00BFA6;
+}
+
 .page {
   width: 1090px;
   margin: 0 auto;
@@ -36,6 +58,10 @@ h1, footer, a {
 span {
   color: var(--spancolor);
 }
+.logo-dark {
+  display: none;
+}
+
 
 nav {
   display: flex;
@@ -43,6 +69,8 @@ nav {
   justify-content: space-between;
   margin-bottom: 101px;
 }
+
+
 
 nav ul {
   font-size: 14px;
@@ -106,6 +134,10 @@ footer a:hover {
   body {
     height: 98vh;
   }
+
+  #mododark {
+    left: 94%;
+  }
   .page {
     width: 600px;
     display: flex;
@@ -145,6 +177,9 @@ section {
 @media(max-width:600px) {
   body {
     height: 98vh;
+  }
+  #mododark {
+    left: 89%;
   }
   .page {
     width: 300px;
